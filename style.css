@@ -17,6 +17,7 @@
 }
 .header-icon{
     display: flex;
+    font-size: 2rem;
     align-items: center;
 }
 .logo-title{
@@ -212,11 +213,16 @@ nav > ul> li> a, .follow a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.play-instantly-img{
+    position: relative;
+}
+.rectangle-img-55{
+    width: 90%;
+}
 .rectangle-img-66{
-    position: relative; 
-    top:-250px;
-    left: -145px;
+    position: absolute;
+    bottom: -115px;
+    left: -172px;
 }
 /* .play-instantly-img img{
     width: 100%;
@@ -230,6 +236,9 @@ nav > ul> li> a, .follow a{
     /* grid-template-columns:repeat(5,1fr)
      */
     
+}
+.types-of-game{
+    padding:120px 0;
 }
 .types-of-game .card h3{
     font-size: 1rem;
@@ -269,6 +278,7 @@ nav > ul> li> a, .follow a{
 
 .footer-icon{
     display: flex;
+    font-size: 2rem;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -317,63 +327,117 @@ nav > ul> li> a, .follow a{
     nav > ul{
         flex-direction: column;
     }
-    .banner{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-    .banner-image img{
-        width: 100%;
-    }
+    .banner {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
     
-    .banner-image{
-        padding: 10px;
-    }
-    .banner-info{
-        padding:100px 80px;
-       
-    }
-    .we-are-gamer{
-        flex-direction: column-reverse;
-        padding: 0;
-    }
-    .we-are-gamer-info{
-        padding: 0;
-        text-align: center;
-    }
-    /* main{
-        margin: 0 auto;
-    } */
-    .games-collection{
-       flex-direction: column;
-    }
-    .online-games{
-        padding: 50px 100px;
-    }
-    .online-games-title{
-        font-size: 1.6rem;
-    }
-    .online-games-des{
-        font-size: .8rem;
-    }
-    .play-instantly{
-        flex-direction: column;
-        padding: 0;
-    }
-    .play-instantly-img img{
-        width: 100%;
-    }
-    .play-instantly-info{
-        padding: 0;
-    }
-    .play-instant-des, .play-instant-title{
-        text-align: center;
-    }
-
-    .footer .social-media{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+        .banner img {
+            width: 100%;
+        }
+    
+        .banner-image img {
+            width: 100%;
+        }
+    
+        .banner-image {
+            padding: 10px;
+        }
+    
+        .banner-info {
+            padding:10px 20px;
+    
+        }
+    
+        .we-are-gamer {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0 20px;
+        }
+        .we-are-gamer img {
+           width: 100%;
+        }
+    
+        .we-are-gamer-info {
+            padding: 0;
+            text-align: center;
+        }
+    
+        /* main{
+            margin: 0 auto;
+        } */
+        .games-collection {
+            flex-direction: column;
+        }
+    
+        .online-games {
+            text-align: center;
+            padding: 40px 20px;
+        }
+    
+        .online-games-title {
+            font-size: 1.6rem;
+        }
+    
+        .online-games-des {
+            font-size: .8rem;
+        }
+    
+        .play-instantly {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        .rectangle-img-55 {
+            margin-left: 70px;
+            width: 70%;
+            text-align: center;
+        }
+        .rectangle-img-66 {
+            bottom: -35px;
+            left: 10px;
+            width: 30%;
+        }
+    
+        .play-instantly-info {
+            padding: 0;
+        }
+    
+        .play-instant-des,
+        .play-instant-title {
+            text-align: center;
+        }
+    
+        .types-of-game {
+            padding: 100px 10px;
+            /* grid-template-columns: repeat(5,1fr); */
+        }
+        .upper-list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .lower-list{
+            display: none;
+        }
+        .footer{
+            padding: 5px 10px;
+        }
+        .sevices{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding-left: 0;
+        }
+    
+        .social-media ul{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding-left: 0;
+        }
+        .terms-condition ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 0;
+        }    
 
 }
